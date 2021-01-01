@@ -56,12 +56,6 @@ public class Hungarian {
         printRes();
     }
 
-    private void printRes() {
-        System.out.println("匹配结果如下:");
-        for (int i = 0; i < match.length; i++) {
-            System.out.println(match[i] + "<==>" + i);
-        }
-    }
 
     /**
      * 从节点u开始是否能寻找到交替路径
@@ -85,5 +79,10 @@ public class Hungarian {
         return false;
     }
 
-
+    private void printRes() {
+        System.out.println("匹配结果如下:");
+        for (int i = 0; i < match.length; i++) {
+            System.out.println(match[i] + "<==>" + i);
+        }
+    }
 }
