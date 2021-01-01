@@ -26,7 +26,7 @@ class Graph:
         while queue:
             u = queue.popleft()
 
-            # Get all adjacent vertices's of the dequeued vertex u
+            # Get all adjacent vertices of the dequeued vertex u
             # If an adjacent has not been visited, then mark it
             # visited and enqueue it
             for ind, val in enumerate(self.graph[u]):
