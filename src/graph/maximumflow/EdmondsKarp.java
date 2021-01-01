@@ -7,7 +7,7 @@ import java.util.Queue;
 /**
  * Edmonds-Karp Algorithm: an implementation of Ford-Fulkerson Algorithm
  * Ford-Fulkerson算法中并没有具体的寻找增广路的方法，Edmonds-Karp是Ford-Fulkerson的一种实现，通过BFS算法寻找增光路
- *
+ * <p>
  * Residual Network: 残存网络，对于流网络，正向边的容量表示为剩余容量，反向边的容量为已流过的流量
  * Augmenting Path:增广路径，在残存网络中一条由源点s到汇点t的简单路径
  */
