@@ -47,13 +47,18 @@ public class Hungarian {
     }
 
     /***/
-    public void hungarian(int[] L, int[] R, int[][] edges) {
+    public int hungarian(int[] L, int[] R, int[][] edges) {
+        int max = 0;
         init(L, R, edges);
         for (int i = 0; i < edges.length; i++) {
             Arrays.fill(color, false);
-            dfsFind(i);
+            if (dfsFind(i)) {
+                max++;
+            }
+
         }
         printRes();
+        return max;
     }
 
 

@@ -13,4 +13,22 @@ def print_hi(name):
 if __name__ == '__main__':
     print_hi('PyCharm')
 
+
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
+
+def max_heapify(self, nums, i, length):
+    l = i * 2 + 1;
+    r = i * 2 + 2;
+
+    # largest记录最大值的索引
+    largest = i
+    #左孩子存在且大于
+    if (l < length and nums[l] > nums[largest]):
+        largest = l;
+    #右孩子存在且大于
+    if (r < length and nums[r] > nums[largest]):
+        largest = r;
+
+    if largest != i:
+        nums[i],nums[largest]=nums[largest],nums[i]
+         self
